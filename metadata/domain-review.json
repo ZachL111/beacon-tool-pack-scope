@@ -1,0 +1,73 @@
+{
+  "repo": "beacon-tool-pack-scope",
+  "language": "Python",
+  "category": "CLI tools",
+  "goal": "Package a Python local lab for pack analysis with log and snapshot fixtures, replay consistency checks, and documented operating limits.",
+  "review_model": {
+    "terms": [
+      "file span",
+      "terminal width",
+      "argument risk",
+      "report density"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "file span",
+      "signal": 62,
+      "slack": 47,
+      "drag": 20,
+      "confidence": 80,
+      "score": 191,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "terminal width",
+      "signal": 56,
+      "slack": 32,
+      "drag": 28,
+      "confidence": 91,
+      "score": 151,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "argument risk",
+      "signal": 78,
+      "slack": 20,
+      "drag": 19,
+      "confidence": 56,
+      "score": 175,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "report density",
+      "signal": 78,
+      "slack": 46,
+      "drag": 19,
+      "confidence": 85,
+      "score": 230,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "file span",
+      "signal": 91,
+      "slack": 50,
+      "drag": 13,
+      "confidence": 67,
+      "score": 260,
+      "lane": "ship"
+    }
+  ]
+}
