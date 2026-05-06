@@ -1,0 +1,17 @@
+{
+  "repo": "beacon-tool-pack-scope",
+  "thresholds": {
+    "signal": 4,
+    "slack": 2,
+    "confidence": 2,
+    "drag": 4,
+    "ship": 165,
+    "watch": 96
+  },
+  "terms": [
+    "file span",
+    "terminal width",
+    "argument risk",
+    "report density"
+  ]
+}
